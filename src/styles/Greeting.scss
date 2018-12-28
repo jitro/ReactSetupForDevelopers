@@ -1,0 +1,28 @@
+$greeting-section-bgcolor: rgb(0, 125, 125);
+
+@mixin textbox-shadow($box, $text) {
+  box-shadow: 0 2px 2px 2px $box;
+  text-shadow: 2px 2px 2px $text;
+}
+
+div.greeting {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $greeting-section-bgcolor;
+
+  @include textbox-shadow(#ccc, #555);
+
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 5rem;
+  padding: 0.5rem 1rem;
+
+  h1 {
+    color: #fff;
+  }
+
+  &:hover {
+    h1 {
+      color: yellow;
+    }
+  }
+}
