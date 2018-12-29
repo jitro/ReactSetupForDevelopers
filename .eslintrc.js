@@ -47,6 +47,7 @@ module.exports = {
     'comma-dangle': [
       'error',
       'never'
-    ]
+    ],
+    'linebreak-style': 0
   }
 };
