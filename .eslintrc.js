@@ -25,7 +25,8 @@ module.exports = {
   'parser': 'babel-eslint',
   'plugins': [
     'react',
-    'jsx-a11y'
+    'jsx-a11y',
+	'react-hooks'
   ],
   'rules': {
     'indent': [
@@ -48,6 +49,8 @@ module.exports = {
       'error',
       'never'
     ],
-    'linebreak-style': 0
+    'linebreak-style': 0,
+	'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   }
 };
